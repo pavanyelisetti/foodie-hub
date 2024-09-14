@@ -1,0 +1,186 @@
+.navbar{
+    padding:17px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    
+}
+.navbar .logo{
+    width:150px;
+    color: orange;
+    font-style: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap:30px;
+    color:#495574; 
+    font-size: 20px;
+   
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap:40px
+}
+.navbar button{
+    background-color: orange
+    ;
+    font-size: 20px;
+    font-family: serif, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-weight: 300;
+    color:whitesmoke;
+    border:1px solid white;
+    padding:10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbar button:hover{
+    background-color: rgb(255, 136, 51);
+}
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid;
+    color: orange;
+}
+.navbar li{
+    cursor:pointer;
+}
+.navbar-search-icon{
+position:relative;
+}
+
+.navbar-search-icon .dot{
+    position:absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: green;
+    border-radius: 10px;
+    top:-7px;
+  right:-5px
+}
+.navbar li:hover{
+    color: orange;
+}
+
+.navbar-profile{
+    position: relative;
+}
+.navbar-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+.navbar-profile:hover .navbar-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    background-color: #fff2ef;
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid orange;
+    outline:2px solid white;
+    list-style: none;
+}
+.navbar-profile-dropdown li{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    cursor: pointer;
+}
+.navbar-profile-dropdown img{
+    width: 20px;
+}
+.navbar-profile-dropdown li:hover{
+    color: orange;
+}
+@media (max-width:1050px)
+{
+    .navbar .logo{
+        width: 140px;
+    }
+    .navbar-menu{
+        gap:20px;
+        font-size: 17px;
+    }
+    .navbar-right{
+        gap:30px;
+    }
+    .navbar-right img{
+        width: 22px;
+    }
+    .navbar-right button{
+        padding: 8px 25px;
+    }
+   
+}
+
+@media (max-width:940px)
+{
+    .navbar .logo{
+        width: 120px;
+    }
+    .navbar-menu{
+        gap:15px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap:20px;
+    }
+    .navbar-right img{
+        width: 20px;
+    }
+    .navbar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+   
+}
+@media (max-width:860px)
+{
+    .navbar-menu{
+       display: none;
+    }
+    .navbar-menu{
+        gap:13px;
+        font-size: 14px;
+    }
+    .navbar-right{
+        gap:18px;
+    }
+    .navbar-right img{
+        width: 18px;
+    }
+    .navbar-right button{
+        padding: 6px 18px;
+        font-size: 13px;
+    }
+}
+@media (max-width:434px)
+{
+    .navbar .logo{
+        font-size: 28px;
+    }
+    .navbar-menu{
+        display: none;
+     }
+     .navbar-menu{
+         gap:11px;
+         font-size: 14px;
+     }
+     .navbar-right{
+         gap:16px;
+     }
+     .navbar-right img{
+         width: 16px;
+     }
+     .navbar-right button{
+         padding: 6px 18px;
+         font-size: 12px;
+     }
+}
